@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Public-Sans-Regular";
+  src: url("./fonts/public-sans-regular.woff2") format("woff2"),
+    url("./fonts/public-sans-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Public-Sans-Bold";
+  src: url("./fonts/public-sans-bold.woff2") format("woff2"),
+    url("./fonts/public-sans-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Public-Sans-Regular";
+}
+
+.font-bold {
+  font-family: "Public-Sans-Bold";
+}
