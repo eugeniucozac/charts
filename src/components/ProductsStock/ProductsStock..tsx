@@ -7,11 +7,12 @@ import {
   Legend,
 } from "chart.js";
 import { PolarArea } from "react-chartjs-2";
-import { toRGBA, rose, purple, green, blue, orange } from "../../utils";
+import { toRGBA } from "../../utils/utils";
+import { rose, purple, green, blue, orange } from "../../utils/consts";
 import { getProductStock, getProductTitle } from "../../selectors";
 import { Card } from "../Card";
-import classes from "./ProductsStock.styles";
 import { InitialState } from "../../type";
+import classes from "./ProductsStock.styles";
 
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
@@ -34,7 +35,7 @@ export const ProductsStock = ({
   title: string;
   category: string;
 }) => {
-  const [data, setData] = useState<any>(initialState);
+  const [data, setData] = useState<InitialState>(initialState);
   const colors = [
     toRGBA(rose),
     toRGBA(orange),

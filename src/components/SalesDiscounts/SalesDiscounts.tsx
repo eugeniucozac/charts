@@ -8,10 +8,10 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { months, purple, green } from "../../utils/consts";
+import { getTotalDiscount } from "../../selectors";
 import { Card } from "../Card";
 import classes from "./SalesDiscounts.styles";
-import { months, purple, green } from "../../utils";
-import { getTotalDiscount } from "../../selectors";
 
 ChartJS.register(
   CategoryScale,

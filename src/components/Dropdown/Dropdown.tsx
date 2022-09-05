@@ -15,8 +15,9 @@ export const Dropdown = ({
   const [active, setActive] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  const handleClickOutside = (event: any) => {
-    if (ref.current && !ref.current.contains(event.target)) {
+  const handleClickOutside = (event: Event) => {
+    const target = event.target as HTMLButtonElement;
+    if (ref.current && !ref.current.contains(target)) {
       setActive(false);
     }
   };

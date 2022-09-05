@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import { toRGBA, rose, purple, green, blue, orange } from "../../utils";
+import { toRGBA } from "../../utils/utils";
+import { rose, purple, green, blue, orange } from "../../utils/consts";
 import { getProductBrands, getProductStock } from "../../selectors";
 import { Card } from "../Card";
 import { Dropdown } from "../Dropdown";
@@ -33,7 +34,7 @@ export const ProductQuantity = ({
   defaultCategory: string;
 }) => {
   const [value, setValue] = useState(defaultCategory);
-  const [data, setData] = useState<any>(initialState);
+  const [data, setData] = useState<InitialState>(initialState);
   const colors = [orange, purple, green, blue, rose];
   const backgroundColor = colors.map((color) => toRGBA(color));
 

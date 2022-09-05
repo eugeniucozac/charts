@@ -11,7 +11,8 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import { months, toRGBA, purple, yellow } from "../../utils";
+import { toRGBA } from "../../utils/utils";
+import { months, purple, yellow } from "../../utils/consts";
 import { getTotalSales } from "../../selectors";
 import classes from "./SalesTotal.styles";
 

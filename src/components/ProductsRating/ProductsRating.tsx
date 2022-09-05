@@ -9,7 +9,8 @@ import {
   Legend,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
-import { toRGBA, rose, yellow, purple, randomNumber } from "../../utils";
+import { toRGBA, randomNumber } from "../../utils/utils";
+import { rose, yellow, purple } from "../../utils/consts";
 import { getProductBrands, getProductRatings } from "../../selectors";
 import { Card } from "../Card";
 import { Dropdown } from "../Dropdown";

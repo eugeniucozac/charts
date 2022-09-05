@@ -13,7 +13,6 @@ export const getQuantity = (category: string) =>
   products
     .filter((item) => item.category === category)
     .reduce((acc: number, n) => acc + n.stock, 0);
-
 export const getTotalSales = (year: number) =>
   sales.filter((sales) => sales.year === year).map((item) => item.total);
 export const getTotalDiscount = (year: number) =>
