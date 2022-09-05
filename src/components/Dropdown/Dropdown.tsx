@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState, useRef, useEffect } from "react";
 import { Button } from "../Button";
 import classes from "./Dropdown.styles";
